@@ -1,5 +1,5 @@
 import styles from "./FriendList.module.css";
-
+import FriendListItem from "./FriendListItem";
 export default function FriendList({ friends }) {
     return (
         <ul className={styles.friendList}>
@@ -16,14 +16,16 @@ export default function FriendList({ friends }) {
     );
 }
 
-function FriendListItem({ avatar, name, isOnline }) {
-    return (
-        <div className={styles.friendCard}>
-            <img src={avatar} alt="Avatar" width="48" className={styles.avatar} />
-            <p className={styles.name}>{name}</p>
-            <p className={`${styles.status} ${isOnline ? styles.online : styles.offline}`}>
-                {isOnline ? 'Online' : 'Offline'}
-            </p>
-        </div>
-    );
+{/*
+    function FriendListItem({ avatar, name, isOnline }) {
+        return (
+            <div className={styles.friendCard}>
+                <img src={avatar} alt="Avatar" width="48" className={styles.avatar} />
+                <p className={styles.name}>{name}</p>
+                <p className={`${styles.status} ${isOnline ? styles.online : styles.offline}`}>
+                    {isOnline ? 'Online' : 'Offline'}
+                </p>
+            </div>
+        );
+    }*/
 }
