@@ -6,7 +6,7 @@ function FriendListItem({ avatar, name, isOnline }) {
             <img src={avatar} alt="Avatar" width="48" className={styles.avatar} />
             <p className={styles.name}>{name}</p>
             <p className={`${styles.status} ${isOnline ? styles.online : styles.offline}`}>
-                {isOnline ? "Online" : "Offline"}
+                {isOnline ? 'Online' : 'Offline'}
             </p>
         </div>
     );
